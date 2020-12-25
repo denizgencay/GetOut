@@ -1,0 +1,1 @@
+Geniş çaplı bir sosyal medya uygulaması.
