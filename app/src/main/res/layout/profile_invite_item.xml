@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="#fafafa"
+    android:id="@+id/profile_invite_item">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.28" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftButtonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.105" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftButtonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.41" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightButtonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.605" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightButtonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Davet Türü"
+            android:textColor="@color/getoutred"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/leftEnd"
+            app:layout_constraintStart_toStartOf="@id/leftStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Başlık"
+            android:textColor="@color/getoutred"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/leftEnd"
+            app:layout_constraintStart_toStartOf="@id/leftStart"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Konum"
+            android:textColor="@color/getoutred"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/leftEnd"
+            app:layout_constraintStart_toStartOf="@id/leftStart"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Zaman"
+            android:textColor="@color/getoutred"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/leftEnd"
+            app:layout_constraintStart_toStartOf="@id/leftStart"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/profile_invite_item_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@id/rightEnd"
+            app:layout_constraintStart_toStartOf="@id/rightStart"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_location" />
+
+        <TextView
+            android:id="@+id/profile_invite_item_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@id/rightEnd"
+            app:layout_constraintStart_toStartOf="@id/rightStart"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_title" />
+
+        <TextView
+            android:id="@+id/profile_invite_item_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/rightStart"
+            app:layout_constraintEnd_toEndOf="@+id/rightEnd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_invite_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/rightStart"
+            app:layout_constraintEnd_toEndOf="@id/rightEnd"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_type" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Adres"
+            android:textColor="@color/getoutred"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/leftEnd"
+            app:layout_constraintStart_toStartOf="@id/leftStart"
+            app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+        <TextView
+            android:id="@+id/profile_invite_item_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@id/rightEnd"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toEndOf="@id/rightStart"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_time" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Açıklama"
+            android:textColor="@color/getoutred"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/leftEnd"
+            app:layout_constraintStart_toStartOf="@id/leftStart"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_address" />
+
+        <TextView
+            android:id="@+id/profile_invite_item_explanation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@id/rightEnd"
+            app:layout_constraintStart_toStartOf="@id/rightStart"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_address" />
+
+        <Button
+            android:id="@+id/profile_invite_item_button"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my_button"
+            android:drawableStart="@drawable/ic_delete_forever_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/rightButtonEnd"
+            app:layout_constraintStart_toStartOf="@id/rightButtonStart"
+            app:layout_constraintTop_toBottomOf="@+id/profile_invite_item_explanation" />
+
+        <Button
+            android:id="@+id/profile_invite_item_attendants_button"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my_button"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:textAllCaps="false"
+            android:textColor="#fafafa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/leftButtonEnd"
+            app:layout_constraintStart_toStartOf="@id/leftButtonStart"
+            app:layout_constraintTop_toBottomOf="@id/profile_invite_item_explanation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

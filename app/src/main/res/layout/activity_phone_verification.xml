@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context="com.imc.getout.PhoneVerificationActivity"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <FrameLayout
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:background="#F5F5F5"
+        >
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/ahmet" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/phone_verification_image"
+        android:layout_below="@id/toolbar4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/smartphone_with_a_smile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/phone_verification_text1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Son adım olarak üyeliğinizi tamamlayabilmeniz için sizden telefon numaranızı rica ediyoruz."
+        android:layout_below="@id/phone_verification_image"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/phone_verification_text2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Lütfen telefonunuza gelen kodu aşağıdaki boşluğa giriniz."
+        android:layout_below="@id/phone_verification_image"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_verification_text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+
+        <Spinner
+            android:id="@+id/phone_verification_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/phone_verification_code"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/phone_verification_spinner"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/phone_verification_phone_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/phone_verification_code"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/phone_verification_code_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:hint="Kodu giriniz"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:inputType="phone"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:maxLength="6"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+    android:id="@+id/phone_verification_send_button"
+    android:layout_width="125dp"
+    android:layout_height="30dp"
+    android:background="@drawable/my_button"
+    android:text="SMS gönder"
+    android:textColor="#fafafa"
+    android:textAllCaps="false"
+    android:layout_below="@id/relative_layout"
+    android:layout_marginTop="50dp"
+    android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/phone_verification_verify_button"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:background="@drawable/my_button"
+        android:text="Doğrula"
+        android:textColor="#fafafa"
+        android:textAllCaps="false"
+        android:layout_below="@id/relative_layout"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/phone_verification_progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/phone_verification_verify_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>

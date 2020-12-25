@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#F5F5F5"
+        app:layout_constraintLeft_toLeftOf="@id/guideline11"
+        app:layout_constraintTop_toTopOf="@id/guideline9">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/ahmet" />
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.035" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="361dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline11"
+        app:layout_constraintRight_toRightOf="@id/guideline12"
+        app:layout_constraintTop_toBottomOf="@id/guideline9"
+        app:srcCompat="@drawable/rsz_logo" />
+
+    <Button
+        android:id="@+id/invite"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:background="@drawable/my_button_main"
+        android:text="Invıte"
+        android:textColor="#fafafa"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/join"
+        app:layout_constraintLeft_toLeftOf="@id/guideline11"
+        app:layout_constraintRight_toRightOf="@id/guideline12"
+        app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/my_button_main"
+        android:text="Joın"
+        android:textColor="#fafafa"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline11"
+        app:layout_constraintRight_toRightOf="@id/guideline12"
+        app:layout_constraintTop_toBottomOf="@id/invite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

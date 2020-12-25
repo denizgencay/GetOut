@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="#F5F5F5"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/ahmet" />
+
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/search_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/my_border"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Kullanıcı arayın"
+        android:paddingLeft="5dp"
+        android:layout_below="@id/toolbar4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:backgroundTint="#fafafa"
+        android:layout_below="@id/search_search"
+        android:overScrollMode="never"/>
+
+
+</RelativeLayout>
